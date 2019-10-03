@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/EdiText"
+                android:layout_width="411dp"
+                android:layout_height="134dp"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:orientation="horizontal">
+
+        <Button
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="clear"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/porcentaje"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="porcentaje"
+            android:text="@string/porcentaje" />
+
+        <Button
+            android:id="@+id/division"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="division"
+            android:text="@string/division" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn7"
+            android:text="@string/siete" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn8"
+            android:text="@string/ocho" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn9"
+            android:text="@string/nueve" />
+
+        <Button
+            android:id="@+id/multiplicacion"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="multiplicacion"
+            android:text="@string/multiplicacion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn4"
+            android:text="@string/cuatro" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn5"
+            android:text="@string/cinco" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn6"
+            android:text="@string/seis" />
+
+        <Button
+            android:id="@+id/resta"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="resta"
+            android:text="@string/resta" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn1"
+            android:text="@string/uno" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn2"
+            android:text="@string/dos" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btn3"
+            android:text="@string/tres" />
+
+        <Button
+            android:id="@+id/suma"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="suma"
+            android:text="@string/suma" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn0"
+            style="@android:style/Widget.Button"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:onClick="btn0"
+
+            android:text="@string/cero" />
+
+        <Button
+            android:id="@+id/btnpunto"
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="btnpunto"
+            android:text="@string/punto" />
+
+        <Button
+            style="@android:style/Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:onClick="igual"
+            android:text="@string/igual" />
+
+    </LinearLayout>
+
+</LinearLayout>
