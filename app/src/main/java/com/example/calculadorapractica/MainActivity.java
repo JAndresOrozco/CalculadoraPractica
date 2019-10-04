@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pantalla = findViewById(R.id.caja);
+        pantalla =(EditText)findViewById(R.id.caja);
     }
     public void btn1(View view) {
         String cap = pantalla.getText().toString();
@@ -87,58 +87,58 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try {
             String aux1 = pantalla.getText().toString();
             operando1 = Double.parseDouble(aux1);
-        } catch (NumberFormatException nfe) {
-            pantalla.setText("+");
+        } catch (NumberFormatException nfe) {}
+            pantalla.setText(" ");
             operacion = 1;
-        }
+
     }
 
     public void resta(View view) {
         try {
             String aux1 = pantalla.getText().toString();
             operando1 = Double.parseDouble(aux1);
-        } catch (NumberFormatException nfe) {
-            pantalla.setText("-");
+        } catch (NumberFormatException nfe) {}
+            pantalla.setText(" ");
             operacion = 2;
-        }
+
     }
 
     public void multiplicacion(View view) {
         try {
             String aux1 = pantalla.getText().toString();
             operando1 = Double.parseDouble(aux1);
-        } catch (NumberFormatException nfe) {
-            pantalla.setText("x");
+        } catch (NumberFormatException nfe) {}
+            pantalla.setText(" ");
             operacion = 3;
-        }
+
     }
 
     public void division(View view) {
         try {
             String aux1 = pantalla.getText().toString();
             operando1 = Double.parseDouble(aux1);
-        } catch (NumberFormatException nfe) {
-            pantalla.setText("/");
+        } catch (NumberFormatException nfe) {}
+            pantalla.setText(" ");
             operacion = 4;
-        }
+
     }
 
     public void porcentaje(View view) {
         try {
             String aux1 = pantalla.getText().toString();
             operando1 = Double.parseDouble(aux1);
-        } catch (NumberFormatException nfe) {
-            pantalla.setText("%");
+        } catch (NumberFormatException nfe) {}
+            pantalla.setText(" ");
             operacion = 5;
-        }
+
     }
     @SuppressLint("SetTextI18n")
     public void igual(View view){
         try {
             String aux2=pantalla.getText().toString();
             operando2=Double.parseDouble(aux2);
-        }catch(NumberFormatException nfc){
-            pantalla.setText("");
+        }catch(NumberFormatException nfc){}
+            pantalla.setText(" ");
 
             if(operacion ==1){
                 res = operando1 + operando2;
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }else if(operacion == 5){
                 res= operando2*(operando1/100.0);
             }
-        }
+
 
         pantalla.setText(""+res);
         operando1=res;

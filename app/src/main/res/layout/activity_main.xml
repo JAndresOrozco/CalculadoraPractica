@@ -12,8 +12,7 @@
         android:background="#00000000"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="0"
-        android:textAlignment="textEnd"
+        android:textAlignment="viewEnd"
         android:textColor="#dff9fb"
         android:textSize="36sp" />
 
